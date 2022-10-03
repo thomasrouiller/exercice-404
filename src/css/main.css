@@ -3,6 +3,7 @@
 // ==================================== */
 
 :root {
+  --main-color: #fff;
 }
 
 /* ====================================
@@ -26,8 +27,10 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
-  background-color: brown;
+  background-color: black;
   margin: auto;
+  color: var(--main-color);
+  font-family: "rubik";
 }
 
 a {
@@ -45,7 +48,15 @@ video {
 // base rules
 // ==================================== */
 
+.container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .text {
+  margin: 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -54,18 +65,45 @@ video {
 }
 
 .logo {
-  text-align: center;
   position: relative;
   width: 440px;
 }
 
-.enfant {
+.eyes {
   position: absolute;
   top: 95px;
   left: 181px;
   width: 185px;
 }
 
+h1 {
+  transform: translateX(-20px);
+  margin: auto;
+  font-family: "rubik";
+  font-size: 266px;
+  letter-spacing: -32.21px;
+  line-height: 219px;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 72px;
+  letter-spacing: -2.71px;
+  line-height: 60px;
+}
+
+p {
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: -0.9px;
+  line-height: 28px;
+  margin: 5px 0;
+}
+
 .button {
   text-align: center;
+  font-family: Rubik-BlackItalic;
+  font-size: 55px;
+  letter-spacing: -2.07px;
+  line-height: 65px;
 }
