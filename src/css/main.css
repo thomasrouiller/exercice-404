@@ -106,4 +106,41 @@ p {
   font-size: 55px;
   letter-spacing: -2.07px;
   line-height: 65px;
+  background: #000000;
+  border: 5px solid #ffffff;
+  padding: 5px 15px;
+}
+
+.button:hover {
+  background: #ffffff;
+  border: 5px solid #ffffff;
+  color: #000000;
+}
+
+.text,
+.button {
+  z-index: 20;
+}
+
+.hidding-spot {
+  z-index: 0;
+  position: absolute;
+  padding: 220px 500px;
+  bottom: 0;
+  background-color: black;
+}
+
+.logo {
+  z-index: -1;
+  animation: movingLogo 0.8s ease-out 1;
+}
+
+@keyframes movingLogo {
+  0% {
+    transform: translateY(450px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
