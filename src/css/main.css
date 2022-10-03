@@ -27,6 +27,7 @@ body {
   font-size: 1rem;
   line-height: 1.25;
   background-color: brown;
+  margin: auto;
 }
 
 a {
@@ -43,3 +44,28 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.logo {
+  text-align: center;
+  position: relative;
+  width: 440px;
+}
+
+.enfant {
+  position: absolute;
+  top: 95px;
+  left: 181px;
+  width: 185px;
+}
+
+.button {
+  text-align: center;
+}
